@@ -1,0 +1,365 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.game-title, .level-number {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 2.5rem; }
+
+.header-container {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #0e5f88;
+  padding: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+html {
+  font-size: 62.5%; }
+
+.header {
+  height: 60px;
+  width: 100%;
+  background-color: #0e5f88;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: white; }
+
+.game {
+  padding: 10px;
+  height: calc(90vh - 60px);
+  width: 100%;
+  background-color: #f1f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .game--container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    border: 1px solid black;
+    background-color: #f1f3f3; }
+    .game--container--inner {
+      overflow: hidden;
+      position: relative;
+      margin: 0 auto;
+      width: 80%;
+      height: 100%;
+      border: 1px solid black; }
+
+.ball {
+  left: 0;
+  position: absolute;
+  width: 8%;
+  height: 8%;
+  background-color: #0e5f88;
+  background: url("../assets/hamster-frames-combined.jpg");
+  background-size: 1400% 100%;
+  top: 42%;
+  -webkit-transition: 3s left;
+  -o-transition: 3s left;
+  transition: 3s left;
+  -webkit-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.block {
+  -webkit-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+  -webkit-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+  position: absolute;
+  width: 10%;
+  background-color: #1d1d1d;
+  height: 2.5%; }
+  .block--left {
+    top: 50%;
+    left: 0; }
+  .block--right {
+    top: 50%;
+    right: 0; }
+
+.girder {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  top: 50%;
+  position: absolute;
+  height: 2.5%;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(65%, grey), color-stop(35%, red));
+  background: -webkit-linear-gradient(bottom, grey 65%, red 35%);
+  background: -o-linear-gradient(bottom, grey 65%, red 35%);
+  background: linear-gradient(to top, grey 65%, red 35%); }
+  .girder--1 {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .girder--2 {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(65%, grey), color-stop(35%, blue));
+    background: -webkit-linear-gradient(bottom, grey 65%, blue 35%);
+    background: -o-linear-gradient(bottom, grey 65%, blue 35%);
+    background: linear-gradient(to top, grey 65%, blue 35%);
+    width: 50%;
+    right: -50%;
+    top: 50%; }
+
+.question {
+  height: 10vh;
+  width: 100%;
+  background-color: #8ecceb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.5rem; }
+
+.form--input {
+  text-align: center;
+  width: 40px;
+  border: none;
+  padding: 0 5px; }
+
+.form--button {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, red), color-stop(50%, green));
+  background: -webkit-linear-gradient(left, red 50%, green 50%);
+  background: -o-linear-gradient(left, red 50%, green 50%);
+  background: linear-gradient(to right, red 50%, green 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all; }
+  .form--button:hover {
+    background-position: left; }
+
+.next-level {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 2rem;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, red), color-stop(50%, green));
+  background: -webkit-linear-gradient(left, red 50%, green 50%);
+  background: -o-linear-gradient(left, red 50%, green 50%);
+  background: linear-gradient(to right, red 50%, green 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all; }
+  .next-level:hover {
+    background-position: left; }
+  .next-level-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+.obstacle {
+  width: 10%;
+  height: 10%;
+  top: 40%;
+  position: absolute;
+  background-color: purple;
+  -webkit-transition: all .6s;
+  -o-transition: all .6s;
+  transition: all .6s; }
+
+@media (max-width: 500px) {
+  .game--container {
+    height: 100vw;
+    width: 100vw; } }
+
+@-webkit-keyframes hammy {
+  0% {
+    background-position: left; }
+  100% {
+    background-position: right; } }
+
+@keyframes hammy {
+  0% {
+    background-position: left; }
+  100% {
+    background-position: right; } }

@@ -1,0 +1,211 @@
+html {
+    font-size: 62.5%;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    background-color: $primaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color:white;
+}
+
+.game {
+    padding: 10px;
+    height: calc(90vh - 60px);
+    width: 100%;
+    background-color: $accentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--container {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        height: 100%;
+        border: 1px solid black;
+        background-color: $accentColor;
+        &--inner {
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+            width: 80%;
+            height: 100%;
+            border: 1px solid black;
+        }
+    }
+}
+
+// GAME COMPONENTS START
+.ball {
+    left: 0;
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    background-color: $primaryColor;
+    background: url('../assets/hamster-frames-combined.jpg');
+    background-size: 1400% 100%;
+    top: 42%;
+    transition: 3s left;
+    transition-delay: 1s;
+    border-radius: 50%;
+    overflow: hidden;
+    // transform: translate(12.5%, 25%);
+    // animation: hammy 1s steps(13) infinite;
+    
+    // &--light {
+    //     transition: 1s all;
+    //     transition-delay: 1s;
+    //     right: 0%;
+    //     background: radial-gradient(circle at 45% 30%,white, $primaryColor);
+    //     background-size: 200% 100%;
+    //     width: 150%;
+    //     height: 100%;
+    //     position: relative;
+    // }
+}
+
+.block {
+    transition: 1s all;
+    transition-delay: 1s;
+    position: absolute;
+    width: 10%;
+    background-color: $black;
+    // add mixin for height
+    height: 2.5%;
+    &--left {
+        top: 50%;
+        left: 0;
+    }
+    &--right {
+        top: 50%;
+        right: 0;
+    }
+}
+
+.girder {
+    transition: all 1s;
+    top: 50%;
+    position: absolute;
+    // add mixin for height
+    height: 2.5%;
+    width: 100%;
+    background: linear-gradient(to top, grey 65%, red 35%);
+    &--rotate {
+        // &:after {
+        //     content: "";
+        //     position: absolute;
+        //     width: 2.5%;
+        //     height: 100%;
+        //     background: radial-gradient(circle at 50% 30%,white, $black);
+        //     border-radius: 50%;
+        //     left: 50%;
+        // }
+    }
+    &--1 {
+        transform: rotate(-45deg);
+    }
+    &--2 {
+        // display: none;
+        background: linear-gradient(to top, grey 65%, blue 35%);
+        width: 50%;
+        right: -50%;
+        top: 50%;
+    }
+}
+
+.question {
+    height: 10vh;
+    width: 100%;
+    background-color: $secondaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.form {
+    &--label {
+        
+    }
+    &--input {
+        text-align: center;
+        width: 40px;
+        border: none;
+        padding: 0 5px;
+    } 
+    &--button {
+        background: linear-gradient(to right, $buttonPrimary 50%, $buttonSecondary 50%);
+        background-size: 200% 100%;
+        background-position: right;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        transition: .3s all;
+        &:hover {
+            background-position: left;
+        }
+    }
+}
+
+.next-level {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    background: linear-gradient(to right, $buttonPrimary 50%, $buttonSecondary 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    transition: .3s all;
+    &:hover {
+        background-position: left;
+    }
+    &-container {
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+    }
+}
+
+.obstacle {
+    width: 10%;
+    height: 10%;
+    top: 40%;
+    position: absolute;
+    background-color: purple;
+    transition: all .6s;
+}
+
+@media (max-width:500px){
+    .game {
+        &--container {
+            height: 100vw;
+            width: 100vw;
+        }
+    }
+}
+
+
+@keyframes hammy {
+			0% {
+				background-position: left;
+			}
+
+			100% {
+				background-position: right;
+			}
+		}

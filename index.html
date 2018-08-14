@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Game</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header--title">Game title : level 1</h1>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- GAME -->
+        <div class="game">
+            <div class="game--container">
+                <!-- BALL -->
+                <div class="ball">
+                    <div class="ball--light"></div>
+                </div>
+                <!-- left BLOCK -->
+                <div class="block block--left"></div>
+                <!-- GAME MAX-WIDTH -->
+                <div class="game--container--inner">
+                    <div class="girder girder--1 girder--rotate"></div>
+                    <div class="girder girder--2"></div>
+                </div>
+                <!-- right BLOCK -->
+                <div class="block block--right"></div>
+            </div>
+        </div>
+
+        <!-- QUESTIONS -->
+        <div class="question">
+            <form class="form" action="submit">
+                <!-- inputs -->
+                <label class="form--label form--label--1" for="">transform: rotate(</label>
+                <input onkeypress="this.style.width = ((this.value.length + 5) * 8) + 'px';" id="input" class="form--input form__input--1" value="" type="text">
+                <label class="form--label form--label--2" for="">deg)</label>
+                <button id="button1" class="form--button form--button--1">submit</button>
+            </form>
+        </div>
+        <div class="next-level-container">
+            <form action="submit">
+                <button class="next-level" id="next-level">Next Level</button>
+            </form>
+        </div>
+    </main>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+        crossorigin='anonymous'></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

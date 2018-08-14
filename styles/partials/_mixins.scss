@@ -1,0 +1,29 @@
+$primaryFont: 'Montserrat', sans-serif;
+
+$primaryColor: #0e5f88;
+$secondaryColor: #8ecceb;
+$accentColor: #f1f3f3;
+$black: #1d1d1d;
+$levelBackground: rgb(201, 201, 201);
+
+// buttons
+$buttonPrimary: red;
+$buttonSecondary: green;
+
+$start: #0e5f88;
+$end: #8ecceb;
+
+html {
+    font-size: 62.5%;
+}
+
+%header {
+    text-transform: uppercase;
+    font-family: $primaryFont;
+    color: white;
+    font-size: 2.5rem;
+}
+
+* {
+    // border: 1px solid red;
+}

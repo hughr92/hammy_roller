@@ -1,0 +1,17 @@
+.header-container {
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $primaryColor;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-title {
+    @extend %header; 
+}
+
+.level-number {
+    @extend %header;
+}

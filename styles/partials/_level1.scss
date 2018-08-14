@@ -1,0 +1,57 @@
+.ball {
+    position: relative;
+    // background-size: 200% 100%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    top: calc(50% - 20px);
+    left: 5%;
+    transform: translate(-50%, -50%);
+    transition: 5s all;
+    overflow: hidden;
+    transition-delay: 1s;
+    &--light {
+        background-position: -5px;
+        width: 200%;
+        height: 100%;
+        position: absolute;
+        background: radial-gradient(circle at 50% 30%,white, $primaryColor);
+        transition: 5s all;
+    }
+}
+
+// .container__game:hover .ball--light {
+//     background-position: -20px;
+// }
+
+.girder {
+    border-top: 3px solid $secondaryColor;
+    position: absolute;
+    width: calc(100% - 20%);
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: #909090;
+    transition: 1s all;
+    &--center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background: $black;
+        border-radius: 50%;
+    }
+}
+
+.start {
+    top: 50%;
+    left: 0;
+}
+
+.end {
+    top: 50%;
+    right: 0;
+}
